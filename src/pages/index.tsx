@@ -1,7 +1,8 @@
+import { Heading } from "@/components";
 import React from "react";
 
 const Index = () => {
-  return <div>Index</div>;
+  return <Heading tag="h1">Hello</Heading>;
 };
 
 export default Index;
