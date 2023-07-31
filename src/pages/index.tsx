@@ -1,7 +1,16 @@
-import { Button, Heading, Tag, Text } from "@/components";
-import React from "react";
+import {
+  Button,
+  Heading,
+  Input,
+  Rating,
+  Tag,
+  Text,
+  TextArea,
+} from "@/components";
+import React, { useState } from "react";
 
 const Index = () => {
+  const [rating, setRating] = useState(3);
   return (
     <>
       <Heading tag="h1">Hello</Heading>
@@ -26,6 +35,20 @@ const Index = () => {
       <Button apperance="primary" arrow="down">
         Down
       </Button>
+
+      <br />
+      <br />
+      <hr />
+      <Input placeholder="First Name" />
+      <br />
+      <br />
+      <div>
+        <TextArea placeholder="Message" />
+      </div>
+      <br />
+      <br />
+      <hr />
+      <Rating rating={rating} isEditable={true} setRating={setRating} />
     </>
   );
 };
