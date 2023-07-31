@@ -1,5 +1,6 @@
 import {
   Button,
+  Card,
   Heading,
   Input,
   Rating,
@@ -49,6 +50,9 @@ const Index = () => {
       <br />
       <hr />
       <Rating rating={rating} isEditable={true} setRating={setRating} />
+      <br />
+      <br />
+      <Card color="primary">Hello my card</Card>
     </>
   );
 };
